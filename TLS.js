@@ -90,7 +90,7 @@ var res = syncRequest("GET", PROXYURL, {
     });
     var proxies = res.getBody("utf8").replace(/\r/g, "").split("\n"); */
 var proxies = fs
-  .readFileSync("proxy.txt", "utf-8")
+  .readFileSync("proxies.txt", "utf-8")
   .toString()
   .replace(/\r/g, "")
   .split("\n");
